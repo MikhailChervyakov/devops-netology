@@ -11,3 +11,7 @@
 Игнорировать файлы заканчивающиеся на .tfvars и .tfvars.json
 Игнорировать файлы override.tf, override.tf.json и заканчивающиеся на _override.tf и _override.tf.json
 Игнорировать файлы .terraformrc и terraform.rc
+
+
+### new commit 
+line1
