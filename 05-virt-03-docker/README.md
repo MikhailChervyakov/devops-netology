@@ -62,8 +62,9 @@ Hey, Netology
 ```
 
 ## Задача3
+```
 * Запустите первый контейнер из образа centos c любым тегом в фоновом режиме, подключив папку /data из текущей рабочей директории на хостовой машине в /data контейнера.
-  ```
+
 docker run -d -v $(pwd)/data:/data --name centos centos:latest sleep infinity
 Unable to find image 'centos:latest' locally
 latest: Pulling from library/centos
@@ -73,9 +74,9 @@ Status: Downloaded newer image for centos:latest
 7e76a289744ea3e51cea606e245ca52382e18b3047f4edeba207e4ddd52ca108
   
 запустил с коммандой sleep infinity, чтобы не получить статус exited
-  ```
+
 * Запустите второй контейнер из образа debian в фоновом режиме, подключив папку /data из текущей рабочей директории на хостовой машине в /data контейнера.
-```
+
 docker run -d -v $(pwd)/data:/data --name debian debian sleep infinity
 Unable to find image 'debian:latest' locally
 latest: Pulling from library/debian
@@ -85,9 +86,9 @@ Status: Downloaded newer image for debian:latest
 e83008dd47e70c886026138ee091bff0d78a966f2081badadaccb664950747a6
 
 запустил с коммандой sleep infinity, чтобы не получить статус exited
-```
+
 * Подключитесь к первому контейнеру с помощью docker exec и создайте текстовый файл любого содержания в /data.
-```
+
 docker exec -it centos bash
 [root@7e76a289744e /]# cd data
 [root@7e76a289744e data]# ls
@@ -97,14 +98,14 @@ Whoa i run docker!
 [root@7e76a289744e data]# exut
 bash: exut: command not found
 [root@7e76a289744e data]# exit
-```
+
 * Добавьте ещё один файл в папку /data на хостовой машине.
-```
+
 cd ./data/
 echo "test" >> ./test.txt 
-```
+
 * Подключитесь во второй контейнер и отобразите листинг и содержание файлов в /data контейнера.
-```
+
 docker exec -it debian bash
 root@e83008dd47e7:/# cd ./data/
 root@e83008dd47e7:/data# ls
