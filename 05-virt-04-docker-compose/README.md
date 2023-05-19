@@ -33,9 +33,8 @@
 ```
 ## 3 С помощью Ansible и Docker Compose разверните на виртуальной машине из предыдущего задания систему мониторинга на основе Prometheus/Grafana. Используйте Ansible-код в директории (src/ansible). Чтобы получить зачёт, вам нужно предоставить вывод команды "docker ps" , все контейнеры, описанные в docker-compose, должны быть в статусе "Up".
 
-```
 ![](https://github.com/MikhailChervyakov/devops-netology/blob/main/05-virt-04-docker-compose/images/5.png)
-
+``1
 деплоил коммандой  ansible-playbook provision.yml  -e "ansible_port=22" 
 ```
 
@@ -46,7 +45,6 @@
 3.    Изучите доступный интерфейс, найдите в интерфейсе автоматически созданные   
 4.    docker-compose-панели с графиками(dashboards).
 5.    Подождите 5-10 минут, чтобы система мониторинга успела накопить данные.
-
+```
 ![](https://github.com/MikhailChervyakov/devops-netology/blob/main/05-virt-04-docker-compose/images/6.png)
 
-```
