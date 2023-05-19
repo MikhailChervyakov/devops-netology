@@ -12,8 +12,8 @@
 * packer build .packer/centos-7-base.json
 ```
 В итоге получилось воть.
-<img src="./05-virt-04-docker-compose/image/1.png" alt="альтернативный текст">
-<img src="./05-virt-04-docker-compose/image/2.png" alt="альтернативный текст">
+<img src="[./05-virt-04-docker-compose/image/1.png" alt="альтернативный текст](https://github.com/MikhailChervyakov/devops-netology/blob/main/05-virt-04-docker-compose/images/1.png)">
+<img src="[./05-virt-04-docker-compose/image/2.png" alt="альтернативный текст](https://github.com/MikhailChervyakov/devops-netology/blob/main/05-virt-04-docker-compose/images/2.png)">
 
 
 ## Задача 22.1. Создайте вашу первую виртуальную машину в YandexCloud с помощью web-интерфейса YandexCloud.
@@ -22,8 +22,8 @@
 Создайте вашу первую виртуальную машину в YandexCloud с помощью Terraform (вместо использования веб-интерфейса YandexCloud). Используйте Terraform-код в директории (src/terraform).
 
 
-<img src="./05-virt-04-docker-compose/image/3.png" alt="альтернативный текст">
-<img src="./05-virt-04-docker-compose/image/4.png" alt="альтернативный текст">
+<img src=".[/05-virt-04-docker-compose/image/3.png" alt="альтернативный текст](https://github.com/MikhailChervyakov/devops-netology/blob/main/05-virt-04-docker-compose/images/3.png)">
+<img src=".[/05-virt-04-docker-compose/image/4.png" alt="альтернативный текст](https://github.com/MikhailChervyakov/devops-netology/blob/main/05-virt-04-docker-compose/images/4.png)">
 
 ```
 * устанавливаем terraform
@@ -34,7 +34,7 @@
 ## 3 С помощью Ansible и Docker Compose разверните на виртуальной машине из предыдущего задания систему мониторинга на основе Prometheus/Grafana. Используйте Ansible-код в директории (src/ansible). Чтобы получить зачёт, вам нужно предоставить вывод команды "docker ps" , все контейнеры, описанные в docker-compose, должны быть в статусе "Up".
 
 ```
-<img src="./05-virt-04-docker-compose/image/5.png" alt="альтернативный текст">
+<img src="https://github.com/MikhailChervyakov/devops-netology/blob/main/05-virt-04-docker-compose/images/5.png">
 
 деплоил коммандой  ansible-playbook provision.yml  -e "ansible_port=22" 
 ```
@@ -47,6 +47,6 @@
 4.    docker-compose-панели с графиками(dashboards).
 5.    Подождите 5-10 минут, чтобы система мониторинга успела накопить данные.
 
-<img src="./05-virt-04-docker-compose/image/6.png" alt="альтернативный текст">
+<img src="[./05-virt-04-docker-compose/image/6.png" alt="альтернативный текст](https://github.com/MikhailChervyakov/devops-netology/blob/main/05-virt-04-docker-compose/images/6.png)">
 
 ```
