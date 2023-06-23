@@ -5,16 +5,6 @@ module "vpc" {
 
 }
 
-# resource "yandex_vpc_network" "develop" {
-#   name = var.vpc_name
-# }
-# resource "yandex_vpc_subnet" "develop" {
-#   name           = var.vpc_name
-#   zone           = var.default_zone
-#   network_id     = yandex_vpc_network.develop.id
-#   v4_cidr_blocks = var.default_cidr
-# }
-
 module "test-vm" {
   source          = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
   env_name        = "develop"
