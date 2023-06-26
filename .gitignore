@@ -1,10 +1,19 @@
 # Local .terraform directories
 **/.terraform/*
-
+/05-virt-02-iaac
+yandex.txt
 # .tfstate files
 *.tfstate
 *.tfstate.*
-
+05-virt-03-docker/*
+05-virt-04-docker-compose/*
+05-virt-05-docker-swarm/*
+05-virt-01-basics/*
+05-virt-01-basics/*
+06-01-terraform/*
+terraform*
+mnt*
+#06-02-terraform/*
 # Crash log files
 crash.log
 crash.*.log
@@ -30,5 +39,6 @@ override.tf.json
 # example: *tfplan*
 
 # Ignore CLI configuration files
-.terraformrc
+.terraform*
 terraform.rc
+06-04-terraform/src/variables.tf
