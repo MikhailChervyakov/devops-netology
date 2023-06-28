@@ -32,6 +32,7 @@ vm-1                       : ok=8    changed=7    unreachable=0    failed=0    s
 ```
 8. Повторно запустите playbook с флагом `--diff` и убедитесь, что playbook идемпотентен.
 9.  Подготовьте README.md-файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.
+[описание README](https://github.com/MikhailChervyakov/devops-netology/blob/main/08-ansible-02-playbook/playbook/group_vars/README.md)
 10. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-02-playbook` на фиксирующий коммит, в ответ предоставьте ссылку на него.
 
 ---

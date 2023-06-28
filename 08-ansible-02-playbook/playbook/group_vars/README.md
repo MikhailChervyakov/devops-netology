@@ -39,3 +39,7 @@ Vector | Create service - создание сервис вектора
 Vector | Creat config - создание конфига вектора
 Vector | Start vector - запуск ввектора
 ```
+
+```
+Используются тэги click и vector для раздельного запуска
+```

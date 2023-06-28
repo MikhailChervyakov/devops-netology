@@ -7,6 +7,7 @@
       ansible.builtin.service:
         name: clickhouse-server
         state: restarted
+    
   tasks:
     - block:
         - name: Get clickhouse distrib
@@ -14,11 +15,15 @@
             url: "https://packages.clickhouse.com/rpm/stable/{{ item }}-{{ clickhouse_version }}.noarch.rpm"
             dest: "./{{ item }}-{{ clickhouse_version }}.rpm"
           with_items: "{{ clickhouse_packages }}"
+          tags:
+              - click         
       rescue:
         - name: Get clickhouse distrib
           ansible.builtin.get_url:
             url: "https://packages.clickhouse.com/rpm/stable/clickhouse-common-static-{{ clickhouse_version }}.x86_64.rpm"
             dest: "./clickhouse-common-static-{{ clickhouse_version }}.rpm"
+          tags:
+              - click         
     - name: Install clickhouse packages
       become: true
       ansible.builtin.yum:
@@ -27,6 +32,9 @@
           - clickhouse-client-{{ clickhouse_version }}.rpm
           - clickhouse-server-{{ clickhouse_version }}.rpm
         disable_gpg_check: true
+        tags:
+          - click         
+
       notify: Start clickhouse service
     - name: Flush handlers
       meta: flush_handlers
@@ -36,6 +44,9 @@
       register: create_db
       failed_when: create_db.rc != 0 and create_db.rc !=82
       changed_when: create_db.rc == 0
+      tags:
+        - click         
+
 
 
 - name: Vector | Install Vector
