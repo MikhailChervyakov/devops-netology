@@ -1,0 +1,24 @@
+---
+clickhouse:
+  hosts:
+    vm-0:
+      ansible_host: 158.160.112.80
+      ansible_connection: ssh
+      ansible_user: centos
+      ansible_port: 22
+
+vector:
+  hosts:
+    vm-1:
+      ansible_host: 158.160.105.48
+      ansible_connection: ssh
+      ansible_user: centos
+      ansible_port: 22
+
+light:
+  hosts:
+    vm-2:
+      ansible_host: 158.160.108.237
+      ansible_connection: ssh
+      ansible_user: centos
+      ansible_port: 22
