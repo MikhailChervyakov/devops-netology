@@ -48,8 +48,8 @@ Starting galaxy role install process
 ```
 ссылки на репозитории ролей
 ```
-[](https://github.com/MikhailChervyakov/lighthouse)
-[](https://github.com/MikhailChervyakov/vector)
+[lighthouse](https://github.com/MikhailChervyakov/lighthouse)
+[vector](https://github.com/MikhailChervyakov/vector)
 ---
 
 ### Как оформить решение задания
